@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "657288701029",
+    "project_id": "psikotes-f880c",
+    "storage_bucket": "psikotes-f880c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657288701029:android:62f896fff8bf65f995928c",
+        "android_client_info": {
+          "package_name": "com.example.psikotes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA_WXzqh0-0DKf1PcHaCLG-q4Oh5Mhj5Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

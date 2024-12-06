@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <!-- CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_register"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="20dp">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Register"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Input Email -->
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="319dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="16dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <!-- Input Phone Number -->
+            <EditText
+                android:id="@+id/phoneNumberEditText"
+                android:layout_width="317dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="8dp"
+                android:hint="Nomor telepon (08xxxx)"
+                android:inputType="phone"
+                android:digits="0123456789"
+                android:maxLength="15" />
+
+
+            <!-- Input Password -->
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="317dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="8dp"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <!-- Register Button -->
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/white"
+                android:text="Sign Up" />
+
+            <!-- Already have an account Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorPrimary"
+                android:text="Already Have Account?"
+                android:textAlignment="center" />
+
+            <!-- Login Text -->
+            <TextView
+                android:id="@+id/tvToLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Login"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
